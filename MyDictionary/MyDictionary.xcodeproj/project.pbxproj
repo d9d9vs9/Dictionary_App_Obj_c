@@ -14,6 +14,11 @@
 		22C83A652587B14F0044D872 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83A642587B14F0044D872 /* main.m */; };
 		22C83A6F2587B14F0044D872 /* MyDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83A6E2587B14F0044D872 /* MyDictionaryTests.m */; };
 		22C83A7A2587B14F0044D872 /* MyDictionaryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83A792587B14F0044D872 /* MyDictionaryUITests.m */; };
+		22C83ABB2587B69C0044D872 /* WordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83ABA2587B69C0044D872 /* WordListViewController.m */; };
+		22C83AC12587B7F30044D872 /* WordListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83AC02587B7F30044D872 /* WordListInteractor.m */; };
+		22C83AC72587B9610044D872 /* WordListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83AC62587B9610044D872 /* WordListRouter.m */; };
+		22C83ACD2587B9A30044D872 /* WordListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83ACC2587B9A30044D872 /* WordListPresenter.m */; };
+		22C83AD32587BA070044D872 /* WordListModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83AD22587BA070044D872 /* WordListModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225C53E82587DBEF005126EF /* ModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleProtocol.h; sourceTree = "<group>"; };
 		22C83A4C2587B14D0044D872 /* MyDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C83A4F2587B14E0044D872 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22C83A502587B14E0044D872 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +54,16 @@
 		22C83A752587B14F0044D872 /* MyDictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C83A792587B14F0044D872 /* MyDictionaryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDictionaryUITests.m; sourceTree = "<group>"; };
 		22C83A7B2587B14F0044D872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22C83AB92587B69C0044D872 /* WordListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordListViewController.h; sourceTree = "<group>"; };
+		22C83ABA2587B69C0044D872 /* WordListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordListViewController.m; sourceTree = "<group>"; };
+		22C83ABF2587B7F30044D872 /* WordListInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordListInteractor.h; sourceTree = "<group>"; };
+		22C83AC02587B7F30044D872 /* WordListInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordListInteractor.m; sourceTree = "<group>"; };
+		22C83AC52587B9610044D872 /* WordListRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordListRouter.h; sourceTree = "<group>"; };
+		22C83AC62587B9610044D872 /* WordListRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordListRouter.m; sourceTree = "<group>"; };
+		22C83ACB2587B9A30044D872 /* WordListPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordListPresenter.h; sourceTree = "<group>"; };
+		22C83ACC2587B9A30044D872 /* WordListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordListPresenter.m; sourceTree = "<group>"; };
+		22C83AD12587BA070044D872 /* WordListModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordListModule.h; sourceTree = "<group>"; };
+		22C83AD22587BA070044D872 /* WordListModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordListModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225C53E62587DBB3005126EF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				225C53E72587DBB7005126EF /* ModuleProtocol */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		225C53E72587DBB7005126EF /* ModuleProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				225C53E82587DBEF005126EF /* ModuleProtocol.h */,
+			);
+			path = ModuleProtocol;
+			sourceTree = "<group>";
+		};
 		22C83A432587B14D0044D872 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +130,7 @@
 		22C83A4E2587B14D0044D872 /* MyDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				22C83AB22587B5F40044D872 /* Modules */,
 				22C83AA62587B4EB0044D872 /* Models */,
 				22C83AA42587B4AB0044D872 /* CoreData */,
 				22C83AA32587B49F0044D872 /* Utilites */,
@@ -139,6 +172,7 @@
 		22C83AA32587B49F0044D872 /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
+				225C53E62587DBB3005126EF /* Protocols */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -205,6 +239,71 @@
 				22C83A632587B14F0044D872 /* Info.plist */,
 			);
 			path = InfoPlist;
+			sourceTree = "<group>";
+		};
+		22C83AB22587B5F40044D872 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				22C83AB62587B61E0044D872 /* WordList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		22C83AB32587B6040044D872 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				22C83ABF2587B7F30044D872 /* WordListInteractor.h */,
+				22C83AC02587B7F30044D872 /* WordListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		22C83AB42587B6170044D872 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				22C83AC52587B9610044D872 /* WordListRouter.h */,
+				22C83AC62587B9610044D872 /* WordListRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		22C83AB52587B61A0044D872 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				22C83AD12587BA070044D872 /* WordListModule.h */,
+				22C83AD22587BA070044D872 /* WordListModule.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		22C83AB62587B61E0044D872 /* WordList */ = {
+			isa = PBXGroup;
+			children = (
+				22C83AB52587B61A0044D872 /* Module */,
+				22C83AB82587B6680044D872 /* View */,
+				22C83AB32587B6040044D872 /* Interactor */,
+				22C83AB72587B6340044D872 /* Presenter */,
+				22C83AB42587B6170044D872 /* Router */,
+			);
+			path = WordList;
+			sourceTree = "<group>";
+		};
+		22C83AB72587B6340044D872 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				22C83ACB2587B9A30044D872 /* WordListPresenter.h */,
+				22C83ACC2587B9A30044D872 /* WordListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		22C83AB82587B6680044D872 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22C83AB92587B69C0044D872 /* WordListViewController.h */,
+				22C83ABA2587B69C0044D872 /* WordListViewController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,9 +434,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C83ACD2587B9A30044D872 /* WordListPresenter.m in Sources */,
+				22C83AD32587BA070044D872 /* WordListModule.m in Sources */,
+				22C83AC72587B9610044D872 /* WordListRouter.m in Sources */,
 				22C83A652587B14F0044D872 /* main.m in Sources */,
 				22C83A5D2587B14E0044D872 /* MyDictionary.xcdatamodeld in Sources */,
+				22C83ABB2587B69C0044D872 /* WordListViewController.m in Sources */,
 				22C83A512587B14E0044D872 /* AppDelegate.m in Sources */,
+				22C83AC12587B7F30044D872 /* WordListInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,8 +605,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = URMC99RRR3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyDictionary/Resources/InfoPlist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,6 +615,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcteam.MyDictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -520,8 +625,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = URMC99RRR3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyDictionary/Resources/InfoPlist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,6 +635,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcteam.MyDictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
