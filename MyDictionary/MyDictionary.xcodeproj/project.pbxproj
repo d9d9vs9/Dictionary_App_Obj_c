@@ -98,13 +98,10 @@
 		22C83A4E2587B14D0044D872 /* MyDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				22C83A4F2587B14E0044D872 /* AppDelegate.h */,
-				22C83A502587B14E0044D872 /* AppDelegate.m */,
-				22C83A5E2587B14F0044D872 /* Assets.xcassets */,
-				22C83A602587B14F0044D872 /* LaunchScreen.storyboard */,
-				22C83A632587B14F0044D872 /* Info.plist */,
-				22C83A642587B14F0044D872 /* main.m */,
-				22C83A5B2587B14E0044D872 /* MyDictionary.xcdatamodeld */,
+				22C83AA62587B4EB0044D872 /* Models */,
+				22C83AA42587B4AB0044D872 /* CoreData */,
+				22C83AA32587B49F0044D872 /* Utilites */,
+				22C83AA22587B4990044D872 /* Resources */,
 			);
 			path = MyDictionary;
 			sourceTree = "<group>";
@@ -125,6 +122,89 @@
 				22C83A7B2587B14F0044D872 /* Info.plist */,
 			);
 			path = MyDictionaryUITests;
+			sourceTree = "<group>";
+		};
+		22C83AA22587B4990044D872 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22C83AAB2587B54A0044D872 /* InfoPlist */,
+				22C83AAA2587B5430044D872 /* Main */,
+				22C83AA92587B5240044D872 /* LaunchScreen */,
+				22C83AA82587B50A0044D872 /* Assets */,
+				22C83AA72587B4FD0044D872 /* AppDelegate */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22C83AA32587B49F0044D872 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		22C83AA42587B4AB0044D872 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				22C83AA52587B4B10044D872 /* Model */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		22C83AA52587B4B10044D872 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22C83A5B2587B14E0044D872 /* MyDictionary.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22C83AA62587B4EB0044D872 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22C83AA72587B4FD0044D872 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				22C83A4F2587B14E0044D872 /* AppDelegate.h */,
+				22C83A502587B14E0044D872 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		22C83AA82587B50A0044D872 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				22C83A5E2587B14F0044D872 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		22C83AA92587B5240044D872 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				22C83A602587B14F0044D872 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		22C83AAA2587B5430044D872 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				22C83A642587B14F0044D872 /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		22C83AAB2587B54A0044D872 /* InfoPlist */ = {
+			isa = PBXGroup;
+			children = (
+				22C83A632587B14F0044D872 /* Info.plist */,
+			);
+			path = InfoPlist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,7 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = URMC99RRR3;
-				INFOPLIST_FILE = MyDictionary/Info.plist;
+				INFOPLIST_FILE = MyDictionary/Resources/InfoPlist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,7 +522,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = URMC99RRR3;
-				INFOPLIST_FILE = MyDictionary/Info.plist;
+				INFOPLIST_FILE = MyDictionary/Resources/InfoPlist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
