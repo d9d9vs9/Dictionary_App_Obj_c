@@ -7,6 +7,7 @@
 
 #import "CoreDataStack.h"
 #import "Constants.h"
+#import "ResultSaveCompletedBlock.h"
 
 @implementation CoreDataStack
 
@@ -64,6 +65,41 @@
         NSLog(@"Unresolved error %@, %@", error, error.userInfo);
         abort();
     }
+}
+
+
+- (void)savePerformAndWait:(nullable ResultSaveCompletedBlock)completedBlock {
+    
+}
+
+- (void)savePerform:(nullable ResultSaveCompletedBlock)completedBlock {
+    
+}
+
+- (void)savePerformAndWaitContext:(NSManagedObjectContext *)context
+                   completedBlock:(nullable ResultSaveCompletedBlock)completedBlock {
+    [context performBlockAndWait:^{
+        NSError *error = nil;
+        if ([context hasChanges] && ![context save: &error]) {
+            NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+            completedBlock(Failure, error);
+        } else {
+            completedBlock(Success, error);
+        }
+    }];
+}
+
+- (void)savePerformContext:(NSManagedObjectContext *)context
+            completedBlock:(nullable ResultSaveCompletedBlock)completedBlock {
+    [context performBlock:^{
+        NSError *error = nil;
+        if ([context hasChanges] && ![context save: &error]) {
+            NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+            completedBlock(Failure, error);
+        } else {
+            completedBlock(Success, error);
+        }
+    }];
 }
 
 @end
