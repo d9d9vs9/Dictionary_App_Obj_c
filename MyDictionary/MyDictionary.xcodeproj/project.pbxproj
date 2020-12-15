@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22BA20AF2588C14100D3B9A9 /* WordCoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BA20AE2588C14100D3B9A9 /* WordCoreDataService.m */; };
 		22C83A512587B14E0044D872 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83A502587B14E0044D872 /* AppDelegate.m */; };
 		22C83A5D2587B14E0044D872 /* MyDictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22C83A5B2587B14E0044D872 /* MyDictionary.xcdatamodeld */; };
 		22C83A5F2587B14F0044D872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C83A5E2587B14F0044D872 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		22C83AC72587B9610044D872 /* WordListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83AC62587B9610044D872 /* WordListRouter.m */; };
 		22C83ACD2587B9A30044D872 /* WordListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83ACC2587B9A30044D872 /* WordListPresenter.m */; };
 		22C83AD32587BA070044D872 /* WordListModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C83AD22587BA070044D872 /* WordListModule.m */; };
+		22CCB02F2588DAFB00278992 /* Result.h in Sources */ = {isa = PBXBuildFile; fileRef = 22CCB02E2588DAFB00278992 /* Result.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,13 @@
 
 /* Begin PBXFileReference section */
 		225C53E82587DBEF005126EF /* ModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleProtocol.h; sourceTree = "<group>"; };
+		22BA20AD2588C14100D3B9A9 /* WordCoreDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordCoreDataService.h; sourceTree = "<group>"; };
+		22BA20AE2588C14100D3B9A9 /* WordCoreDataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordCoreDataService.m; sourceTree = "<group>"; };
+		22BA20B42588C30900D3B9A9 /* AddWordProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddWordProtocol.h; sourceTree = "<group>"; };
+		22BA20B52588C32300D3B9A9 /* FetchWordProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchWordProtocol.h; sourceTree = "<group>"; };
+		22BA20B62588C32F00D3B9A9 /* UpdateWordProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateWordProtocol.h; sourceTree = "<group>"; };
+		22BA20B72588C33C00D3B9A9 /* DeleteWordProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteWordProtocol.h; sourceTree = "<group>"; };
+		22BA20B82588C36100D3B9A9 /* CRUDWordProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUDWordProtocol.h; sourceTree = "<group>"; };
 		22C83A4C2587B14D0044D872 /* MyDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C83A4F2587B14E0044D872 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22C83A502587B14E0044D872 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +73,9 @@
 		22C83ACC2587B9A30044D872 /* WordListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordListPresenter.m; sourceTree = "<group>"; };
 		22C83AD12587BA070044D872 /* WordListModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordListModule.h; sourceTree = "<group>"; };
 		22C83AD22587BA070044D872 /* WordListModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordListModule.m; sourceTree = "<group>"; };
+		22CCB02E2588DAFB00278992 /* Result.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
+		22CCB0372588DB4E00278992 /* WordSaveCompletedBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordSaveCompletedBlock.h; sourceTree = "<group>"; };
+		22CCB03B2588E66200278992 /* WordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 		225C53E62587DBB3005126EF /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				22BA20B32588C2F000D3B9A9 /* CRUDWordProtocols */,
 				225C53E72587DBB7005126EF /* ModuleProtocol */,
 			);
 			path = Protocols;
@@ -105,6 +118,35 @@
 				225C53E82587DBEF005126EF /* ModuleProtocol.h */,
 			);
 			path = ModuleProtocol;
+			sourceTree = "<group>";
+		};
+		22BA20AB2588C10900D3B9A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22BA20AC2588C11E00D3B9A9 /* WordCoreDataService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		22BA20AC2588C11E00D3B9A9 /* WordCoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				22BA20AD2588C14100D3B9A9 /* WordCoreDataService.h */,
+				22BA20AE2588C14100D3B9A9 /* WordCoreDataService.m */,
+			);
+			path = WordCoreDataService;
+			sourceTree = "<group>";
+		};
+		22BA20B32588C2F000D3B9A9 /* CRUDWordProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				22BA20B42588C30900D3B9A9 /* AddWordProtocol.h */,
+				22BA20B52588C32300D3B9A9 /* FetchWordProtocol.h */,
+				22BA20B62588C32F00D3B9A9 /* UpdateWordProtocol.h */,
+				22BA20B72588C33C00D3B9A9 /* DeleteWordProtocol.h */,
+				22BA20B82588C36100D3B9A9 /* CRUDWordProtocol.h */,
+			);
+			path = CRUDWordProtocols;
 			sourceTree = "<group>";
 		};
 		22C83A432587B14D0044D872 = {
@@ -130,6 +172,7 @@
 		22C83A4E2587B14D0044D872 /* MyDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				22BA20AB2588C10900D3B9A9 /* Services */,
 				22C83AB22587B5F40044D872 /* Modules */,
 				22C83AA62587B4EB0044D872 /* Models */,
 				22C83AA42587B4AB0044D872 /* CoreData */,
@@ -172,6 +215,8 @@
 		22C83AA32587B49F0044D872 /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
+				22CCB0362588DB2A00278992 /* CompletedBlocks */,
+				22CCB02C2588DA2400278992 /* Enums */,
 				225C53E62587DBB3005126EF /* Protocols */,
 			);
 			path = Utilites;
@@ -196,6 +241,7 @@
 		22C83AA62587B4EB0044D872 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				22CCB03B2588E66200278992 /* WordModel.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +350,22 @@
 				22C83ABA2587B69C0044D872 /* WordListViewController.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		22CCB02C2588DA2400278992 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				22CCB02E2588DAFB00278992 /* Result.h */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		22CCB0362588DB2A00278992 /* CompletedBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				22CCB0372588DB4E00278992 /* WordSaveCompletedBlock.h */,
+			);
+			path = CompletedBlocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +498,8 @@
 			files = (
 				22C83ACD2587B9A30044D872 /* WordListPresenter.m in Sources */,
 				22C83AD32587BA070044D872 /* WordListModule.m in Sources */,
+				22CCB02F2588DAFB00278992 /* Result.h in Sources */,
+				22BA20AF2588C14100D3B9A9 /* WordCoreDataService.m in Sources */,
 				22C83AC72587B9610044D872 /* WordListRouter.m in Sources */,
 				22C83A652587B14F0044D872 /* main.m in Sources */,
 				22C83A5D2587B14E0044D872 /* MyDictionary.xcdatamodeld in Sources */,
